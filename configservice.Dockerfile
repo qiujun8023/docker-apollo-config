@@ -6,7 +6,7 @@ RUN apk update upgrade \
 ARG VERSION
 ENV VERSION $VERSION
 
-COPY apollo/apollo-configservice/target/apollo-configservice-${VERSION}-github.zip /apollo-configservice/apollo-configservice-${VERSION}-github.zip
+COPY apollo-configservice-${VERSION}-github.zip /apollo-configservice/apollo-configservice-${VERSION}-github.zip
 
 RUN unzip /apollo-configservice/apollo-configservice-${VERSION}-github.zip -d /apollo-configservice \
     && rm -rf /apollo-configservice/apollo-configservice-${VERSION}-github.zip \

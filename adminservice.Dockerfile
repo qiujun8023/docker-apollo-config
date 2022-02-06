@@ -6,7 +6,7 @@ RUN apk update upgrade \
 ARG VERSION
 ENV VERSION $VERSION
 
-COPY apollo/apollo-adminservice/target/apollo-adminservice-${VERSION}-github.zip /apollo-adminservice/apollo-adminservice-${VERSION}-github.zip
+COPY apollo-adminservice-${VERSION}-github.zip /apollo-adminservice/apollo-adminservice-${VERSION}-github.zip
 
 RUN unzip /apollo-adminservice/apollo-adminservice-${VERSION}-github.zip -d /apollo-adminservice \
     && rm -rf /apollo-adminservice/apollo-adminservice-${VERSION}-github.zip \
