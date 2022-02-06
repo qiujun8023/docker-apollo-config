@@ -6,7 +6,7 @@ RUN apk update upgrade \
 ARG VERSION
 ENV VERSION $VERSION
 
-COPY apollo-portal-${VERSION}-github.zip /apollo-portal/apollo-portal-${VERSION}-github.zip
+COPY apollo/apollo-apollo/target/apollo-portal-${VERSION}-github.zip /apollo-portal/apollo-portal-${VERSION}-github.zip
 
 RUN unzip /apollo-portal/apollo-portal-${VERSION}-github.zip -d /apollo-portal \
     && rm -rf /apollo-portal/apollo-portal-${VERSION}-github.zip \
