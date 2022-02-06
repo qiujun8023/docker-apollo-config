@@ -14,3 +14,4 @@ jobs:
       with:
         repository: apolloconfig/apollo
         ref: 1.9.2
+        persist-credentials: false
