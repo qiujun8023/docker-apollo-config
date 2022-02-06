@@ -15,6 +15,6 @@ jobs:
       with:
         repository: apolloconfig/apollo
         path: apollo
-        # ref: 1.9.2
+        ref: v1.9.2
         # persist-credentials: false
     - run: ls -lh
